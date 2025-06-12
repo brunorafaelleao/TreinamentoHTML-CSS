@@ -25,6 +25,59 @@
         <label for="email">E-mail:</label>
         <input type="text" name="email" />
       </div>
+      <!-- 6 - Select -->
+      <div>
+        <label for="job">Selecione a sua profissão</label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+      <!-- 7 - Selected para fixar uma opção  -->
+      <div>
+        <label for="contract">Você leu os termos do contrato?</label>
+        <select name="contract" id="">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+      <!-- 8 - Múltiplas seleções -->
+      <div>
+        <label for="items">Selecione os itens desejados</label>
+        <select name="items" multiple id="">
+          <option value="pera">Pera</option>
+          <option value="feijao">Feijão</option>
+          <option value="arroz">Arroz</option>
+          <option value="milho">Milho</option>
+        </select>
+      </div>
+      <!-- 9 - TextArea -->
+      <div>
+        <label for="comment">Escreva o que você achou do post</label>
+        <textarea name="comment" id=""></textarea>
+      </div>
+      <!-- 10 - Fieldset -->
+      <div>
+        <fieldset>
+          <legend>Preencha as suas informações:</legend>
+          <label for="firstname">Nome:</label>
+          <input type="text" name="firstname" id="firstname" />
+          <label for="lastname">Sobrenome:</label>
+          <input type="text" name="lastname" id="lastname" />
+        </fieldset>
+      </div>
+      <!-- 11 - datalist -->
+      <div>
+        <label for="flavor">Escolha o sabor</label>
+        <input type="text" name="flavor" list="flavors" />
+        <datalist id="flavors">
+          <option value="Cereja"></option>
+          <option value="Chocolate"></option>
+          <option value="Morango"></option>
+          <option value="Baunilha"></option>
+        </datalist>
+      </div>
       <!-- 5 - envio de form -->
       <input type="submit" value="Enviar" />
     </form>
