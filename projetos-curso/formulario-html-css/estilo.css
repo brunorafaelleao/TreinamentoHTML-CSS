@@ -35,8 +35,14 @@ input {
 input[type="text"],
 input[type="number"],
 input[type="date"],
-input[type="file"] {
+input[type="file"],
+textarea {
   width: 40rem;
+}
+
+/*áre da descrição do produto*/
+textarea {
+  padding: 1rem 0.5rem;
 }
 
 /*pade header*/
