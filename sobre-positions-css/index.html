@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Relative e Absolute</title>
+    <style>
+      /* Container Pai */
+      .container-relativo {
+        position: relative;
+        width: 120px;
+        height: 100px;
+        background-color: #e0e0e0;
+        border: 2px solid #555;
+        margin: 50px auto;
+      }
+
+      /* Container Filho da Esquerda */
+      .filho-esquerda {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #ff6f61;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      /* Container Filho da Direita */
+      .filho-direita {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #6ab04c;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-relativo">
+      <div class="filho-esquerda"></div>
+      <div class="filho-direita"></div>
+    </div>
+  </body>
+</html>
